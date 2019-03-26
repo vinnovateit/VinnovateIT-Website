@@ -67,7 +67,12 @@ ul {
 }
 
 .board-members .team .spk-img:before {
-    background: rgba(91, 69, 213, 0.8);
+    background-color: #935d8c;
+    background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
+    background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
+    background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
+    background-image: url("images/overlay.png"), linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
+    opacity: 0.85;
     content: "";
     position: absolute;
     width: 100%;
