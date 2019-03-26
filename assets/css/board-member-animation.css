@@ -6,14 +6,22 @@ ul {
     margin: 0;
     padding: 0;
     outline: none;
+    padding-right: 20px;
+    padding-bottom: 20px;
 }
 
 .mb50 {
     margin-bottom: 50px;
 }
 
+.mb9 {
+    margin-bottom: 9px;
+}
 
-/*3.4 Whos Speaking Area*/
+.social-icon-link {
+    border-bottom: none;
+}
+
 .board-members .team {
     -webkit-transition: all 0.4s;
     -o-transition: all 0.4s;
@@ -62,7 +70,12 @@ ul {
 }
 
 .board-members .team .spk-img:before {
-    background: rgba(91, 69, 213, 0.8);
+    background-color: #935d8c;
+    background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
+    background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
+    background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
+    background-image: url("images/overlay.png"), linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
+    opacity: 0.85;
     content: "";
     position: absolute;
     width: 100%;
@@ -97,7 +110,7 @@ ul {
 .board-members .team .spk-img ul {
     position: absolute;
     display: inline-block;
-    top: 32%;
+    top: 30%;
     left: 23%;
     width: 100px;
     line-height: 3;
@@ -107,10 +120,7 @@ ul {
     transition: all 0.4s;
 }
 
-.board-members {
-    padding-bottom: 20px;
-    padding-right: 24px;
-}
+
 
 .board-members .team .spk-img ul:before {
     position: absolute;
@@ -119,7 +129,7 @@ ul {
     width: 110px;
     background: transparent;
     top: -4%;
-    left: -15px;
+    left: -15%;
     border: 1px solid #fff;
     -webkit-transform: rotate(44deg) scale(1.4);
     -ms-transform: rotate(44deg) scale(1.4);
