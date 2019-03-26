@@ -18,7 +18,10 @@ ul {
     margin-bottom: 9px;
 }
 
-/*3.4 Whos Speaking Area*/
+.social-icon-link {
+    border-bottom: none;
+}
+
 .board-members .team {
     -webkit-transition: all 0.4s;
     -o-transition: all 0.4s;
