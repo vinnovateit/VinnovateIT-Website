@@ -148,22 +148,48 @@ $(".tabs").on("click", "a", function (e) {
 	});
 
 	console.log(itemPos.left);
-	if (itemPos.left == 0) {
-		console.log("Current")
-		$('#current-board').fadeIn('slow');
-		$("#ex-board").fadeOut('fast');
-		$("#advisory-board").fadeOut('fast');
-	} else if (itemPos.left == 102.25) {
-		console.log("Ex")
-		$('#ex-board').fadeIn('slow');
-		$("#current-board").fadeOut('fast');
-		$("#advisory-board").fadeOut('fast');
-	} else if (itemPos.left == 160.21875) {
-		console.log("Advisory")
-		$('#advisory-board').fadeIn('slow');
-		$("#ex-board").fadeOut('fast');
-		$("#current-board").fadeOut('fast');
-	}
+});
+
+
+// TODO:Improve below code i.e., use function and pass element to be displayed in that
+$("#title-current-board-desktop").on("click", function (e) {
+	console.log("currn")
+	$('#current-board').fadeIn('slow');
+	$("#ex-board").fadeOut('fast');
+	$("#advisory-board").fadeOut('fast');
+});
+
+$("#title-ex-board-desktop").on("click", function (e) {
+	console.log("ex")
+	$('#ex-board').fadeIn('slow');
+	$("#current-board").fadeOut('fast');
+	$("#advisory-board").fadeOut('fast');
+});
+
+$("#title-advisory-board-mobile").on("click", function (e) {
+	$('#advisory-board').fadeIn('slow');
+	$("#ex-board").fadeOut('fast');
+	$("#current-board").fadeOut('fast');
+});
+
+$("#title-current-board-mobile").on("click", function (e) {
+	console.log("currn")
+	$('#current-board').fadeIn('slow');
+	$("#ex-board").fadeOut('fast');
+	$("#advisory-board").fadeOut('fast');
+});
+
+$("#title-ex-board-mobile").on("click", function (e) {
+	console.log("ex")
+	$('#ex-board').fadeIn('slow');
+	$("#current-board").fadeOut('fast');
+	$("#advisory-board").fadeOut('fast');
+});
+
+$("#title-advisory-board-desktop").on("click", function (e) {
+	$('#advisory-board').fadeIn('slow');
+	$("#ex-board").fadeOut('fast');
+	$("#current-board").fadeOut('fast');
 });
 
 $(document).ready(function () {
