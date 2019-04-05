@@ -187,10 +187,17 @@ $("#title-advisory-board-desktop").on("click", function (e) {
 });
 
 $(document).ready(function () {
-	fadeMyDiv();
+	keepCurrentBoardDiv();
+
+	if ($('#content-mobile').css('display') == 'block') {
+		$("#title-current-board-mobile").click();
+
+	} else {
+		$("#title-current-board-desktop").click();
+	}
 })
 
-function fadeMyDiv() {
+function keepCurrentBoardDiv() {
 	$("#ex-board").fadeOut('fast');
 	$("#advisory-board").fadeOut('fast');
 }
