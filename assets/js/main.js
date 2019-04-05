@@ -146,21 +146,17 @@ $(".tabs").on("click", "a", function (e) {
 		left: itemPos.left + "px",
 		width: activeWidth + "px"
 	});
-
-	console.log(itemPos.left);
 });
 
 
 // TODO:Improve below code i.e., use function and pass element to be displayed in that
 $("#title-current-board-desktop").on("click", function (e) {
-	console.log("currn")
 	$('#current-board').fadeIn('slow');
 	$("#ex-board").fadeOut('fast');
 	$("#advisory-board").fadeOut('fast');
 });
 
 $("#title-ex-board-desktop").on("click", function (e) {
-	console.log("ex")
 	$('#ex-board').fadeIn('slow');
 	$("#current-board").fadeOut('fast');
 	$("#advisory-board").fadeOut('fast');
@@ -173,14 +169,12 @@ $("#title-advisory-board-mobile").on("click", function (e) {
 });
 
 $("#title-current-board-mobile").on("click", function (e) {
-	console.log("currn")
 	$('#current-board').fadeIn('slow');
 	$("#ex-board").fadeOut('fast');
 	$("#advisory-board").fadeOut('fast');
 });
 
 $("#title-ex-board-mobile").on("click", function (e) {
-	console.log("ex")
 	$('#ex-board').fadeIn('slow');
 	$("#current-board").fadeOut('fast');
 	$("#advisory-board").fadeOut('fast');
