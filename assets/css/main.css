@@ -29,6 +29,31 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
 
+	
+/*DARK THEME BUTTON*/
+	
+svg {
+		cursor: pointer;
+		height:30px;
+		position: absolute;
+		right:100px;
+		top:7px;
+	}
+
+.btn{
+	position: absolute;
+	right: 2px;
+	border-style: none;
+	border-radius: 24px;
+	padding:0 !important;
+}
+	
+
+/*FINISH DARK THEME BUTTON*/	
+
+
+
+
 body {
 	line-height: 1;
 }
