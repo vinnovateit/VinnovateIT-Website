@@ -13,9 +13,9 @@ const darkmode=document.querySelector('.darkmodediv');
 darkmode.addEventListener('click',()=>{
 	let css=document.querySelector('#styles');
 	css.href=toogle ? "assets/css/main.css":"assets/css/darkmain.css";
-	let button=document.querySelector('.darkbtn');
-	button.innerHTML=toogle ? "Dark Mode" : "Light Mode";
-	button.className=toogle ?"btn darkbtn btn-dark":"btn darkbtn btn-info";
+	let h6=document.querySelector('.h6');
+	h6.innerText=toogle?"Dark mode":"Light mode";
+	
 
 
     const timeline=anime.timeline({
