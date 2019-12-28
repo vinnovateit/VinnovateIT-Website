@@ -35,12 +35,12 @@ footer, header, hgroup, menu, nav, section {
 svg {
 		cursor: pointer;
 		height:60px;
-		position: fixed;
+		position: absolute;
 		right:0;
 		top:7px;
 	}
 .h6{
-	position: fixed;
+	position: absolute;
 	cursor: pointer;
 	top:80px;
 	right: 25px;
