@@ -32,24 +32,23 @@ footer, header, hgroup, menu, nav, section {
 	
 	
 
-	
-    svg {
+  svg {
 		cursor: pointer;
-		height:60px;
+		height:6vh;
 		position: absolute;
 		right:0;
-		top:7px;
+		top:30px;
 	}
 
 	.h6{
 		position: absolute;
 		cursor: pointer;
-		top:80px;
+		top:70px;
 		color:white!important;
-		right: 25px;
+		right: 30px;
 		border-style: none;
 		border-radius: 24px;
-		font-size: 20px;
+		font-size: 17px;
 		padding:0 !important;
 	}
 	
