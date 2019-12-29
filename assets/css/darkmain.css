@@ -44,6 +44,7 @@ footer, header, hgroup, menu, nav, section {
 		position: absolute;
 		cursor: pointer;
 		top:70px;
+		margin-top:10px;
 		color:white!important;
 		right: 30px;
 		border-style: none;
