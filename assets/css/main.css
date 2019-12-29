@@ -43,9 +43,10 @@ svg {
 	position: absolute;
 	cursor: pointer;
 	top:70px;
+	margin-top:10px;
 	right: 30px;
 	border-style: none;
-    border-radius: 24px;
+        border-radius: 24px;
 	padding:0 !important;
 	font-size: 17px;
 }
