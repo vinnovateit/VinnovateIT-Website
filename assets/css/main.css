@@ -34,20 +34,20 @@ footer, header, hgroup, menu, nav, section {
 	
 svg {
 		cursor: pointer;
-		height:60px;
+		height:6vh;;
 		position: absolute;
 		right:0;
-		top:7px;
+		top:30px;
 	}
 .h6{
 	position: absolute;
 	cursor: pointer;
-	top:80px;
-	right: 25px;
+	top:70px;
+	right: 30px;
 	border-style: none;
     border-radius: 24px;
 	padding:0 !important;
-	font-size: 20px;
+	font-size: 17px;
 }
 
 	
