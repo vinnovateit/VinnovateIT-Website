@@ -22,6 +22,7 @@ darkmode.addEventListener('click', () => {
 		duration: 750,
 		easing: 'easeOutExpo'
 	})
+	
 		.add({
 			targets: '#sunpath',
 			d: [
