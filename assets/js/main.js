@@ -5,46 +5,46 @@
 */
 
 /*DARK THEME ADDED*/
-const moonpath="M32 69C32 107.108 71 138 71 138C31.7878 138 0 107.108 0 69C0 30.8924 31.7878 0 71 0C71 0 32 30.8924 32 69Z";
-const sunpath="M142 69C142 107.108 110.212 138 71 138C31.7878 138 0 107.108 0 69C0 30.8924 31.7878 0 71 0C110.212 0 142 30.8924 142 69Z";
-let toogle=false;
-const darkmode=document.querySelector('.darkmodediv');
+const moonpath = "M32 69C32 107.108 71 138 71 138C31.7878 138 0 107.108 0 69C0 30.8924 31.7878 0 71 0C71 0 32 30.8924 32 69Z";
+const sunpath = "M142 69C142 107.108 110.212 138 71 138C31.7878 138 0 107.108 0 69C0 30.8924 31.7878 0 71 0C110.212 0 142 30.8924 142 69Z";
+let toogle = false;
+const darkmode = document.querySelector('.darkmodediv');
 
-darkmode.addEventListener('click',()=>{
-	let css=document.querySelector('#styles');
-	css.href=toogle ? "assets/css/main.css":"assets/css/darkmain.css";
-	let h6=document.querySelector('.h6');
-	h6.innerText=toogle?"Dark mode":"Light mode";
-	
+darkmode.addEventListener('click', () => {
+	let css = document.querySelector('#styles');
+	css.href = toogle ? "assets/css/main.css" : "assets/css/darkmain.css";
+	let h6 = document.querySelector('.h6');
+	h6.innerText = toogle ? "Light mode" : "Dark mode";
 
 
-    const timeline=anime.timeline({
-        duration:750,
-        easing:'easeOutExpo'
-    })
-    .add({
-        targets:'#sunpath',
-        d:[
-            {value:toogle ? sunpath :moonpath}
-        ]
-    })
-    .add({
-        targets:'#darkmodesvg',
-        rotate:toogle?60:320
-    },
-	'-=350')
+
+	const timeline = anime.timeline({
+		duration: 750,
+		easing: 'easeOutExpo'
+	})
+		.add({
+			targets: '#sunpath',
+			d: [
+				{ value: toogle ? sunpath : moonpath }
+			]
+		})
+		.add({
+			targets: '#darkmodesvg',
+			rotate: toogle ? 60 : 320
+		},
+			'-=350')
 	// .add({
 	// 	targets:'.darkbtn',
 	// 	innerText:toogle ? "Dark Mode" : "Light Mode",
 	// 	className:toogle ?"btn darkbtn btn-dark":"btn darkbtn btn-light"
 	// },'-=700')
 
-    if(!toogle){
-        toogle=true;
-    }
-    else{
-        toogle=false;
-    }
+	if (!toogle) {
+		toogle = true;
+	}
+	else {
+		toogle = false;
+	}
 });
 
 /*DARK THEME FINISHED*/
