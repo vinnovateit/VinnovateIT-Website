@@ -7,7 +7,7 @@
 /*DARK THEME ADDED*/
 const moonpath = "M32 69C32 107.108 71 138 71 138C31.7878 138 0 107.108 0 69C0 30.8924 31.7878 0 71 0C71 0 32 30.8924 32 69Z";
 const sunpath = "M142 69C142 107.108 110.212 138 71 138C31.7878 138 0 107.108 0 69C0 30.8924 31.7878 0 71 0C110.212 0 142 30.8924 142 69Z";
-let toogle = false;
+let toogle = true;
 const darkmode = document.querySelector('.darkmodediv');
 
 darkmode.addEventListener('click', () => {
@@ -25,12 +25,12 @@ darkmode.addEventListener('click', () => {
 		.add({
 			targets: '#sunpath',
 			d: [
-				{ value: toogle ? sunpath : moonpath }
+				{ value: toogle ? moonpath : sunpath }
 			]
 		})
 		.add({
 			targets: '#darkmodesvg',
-			rotate: toogle ? 60 : 320
+			rotate: toogle ? 320 : 60
 		},
 			'-=350')
 	// .add({
