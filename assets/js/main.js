@@ -39,7 +39,7 @@ darkmode.addEventListener('click', () => {
 	// 	className:toogle ?"btn darkbtn btn-dark":"btn darkbtn btn-light"
 	// },'-=700')
 
-	if (!toogle) {
+	if (toogle == false) {
 		toogle = true;
 	}
 	else {
