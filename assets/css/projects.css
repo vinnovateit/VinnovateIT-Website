@@ -29,6 +29,7 @@
 .gw-stats {
   display: inline-block;
   margin: 0;
+  float: right;
 }
 .gw-watchers,
 .gw-forks {
