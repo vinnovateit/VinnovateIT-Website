@@ -1,0 +1,60 @@
+/*projects*/
+.gw-repo-outer {
+  width: 40%;
+  margin: 20px;
+}
+.gw-repo-outer:nth-child(2n + 1) {
+  clear: left;
+}
+.gw-repo {
+  padding: 0.5em;
+  margin: 0 1.5em 1em 0;
+  border: 3px solid #ccc;
+  border-radius: 5px;
+}
+.gw-repo:nth-child(2n) {
+  margin: 0 0 1em 1.5em;
+}
+.gw-title {
+  border-bottom: 1px solid white;
+  margin-bottom: 0.3em;
+}
+.gw-name {
+  color: #f2aa4cff;
+  font-weight: bold;
+  text-decoration: none !important;
+  border-bottom: none !important;
+  text-transform: capitalize !important;
+}
+.gw-stats {
+  display: inline-block;
+  margin: 0;
+}
+.gw-watchers,
+.gw-forks {
+  display: inline-block;
+  height: 21px;
+  padding: 0 5px 0 23px;
+  line-height: 21px;
+  background: transparent url("repostat.png") no-repeat 0 0;
+}
+.gw-watchers {
+  background-position: 5px -2px;
+}
+.gw-forks {
+  background-position: 5px -52px;
+}
+.gw-lang {
+  font-size: 0.8em;
+  color: #e94b3cff;
+}
+.gw-clearer {
+  clear: left;
+}
+
+@media only screen and (max-width: 500px) {
+  .gw-repo-outer {
+    width: 90%;
+    margin: 20px;
+  }
+}
